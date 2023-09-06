@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "experimentalDecorators": true,
+      "importHelpers": true,
+      "incremental": true,
+      "jsx": "react",
+      "lib": [
+        "es2015",
+        "esnext",
+        "dom"
+      ],
+      "downlevelIteration": true,
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": false,
+      "noFallthroughCasesInSwitch": true,
+      "noImplicitAny": false,
+      "noImplicitThis": true,
+      "noUnusedLocals": true,
+      "skipLibCheck": true,
+      "strict": true,
+      "target": "es5",
+      "outDir": "build",
+      "baseUrl": "src"
+    },
+    "include": [
+      "src",
+      "src/assets/img/images.d.ts"
+    ],
+    "exclude": [
+      "node_modules"
+    ]
+  }
