@@ -8,6 +8,7 @@
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "dependencies": {
+    "octokit": "^3.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.15.0",
@@ -21,6 +22,7 @@
     "@types/react-router-dom": "^5.3.3",
     "@types/styled-components": "^5.1.26",
     "autoprefixer": "^10.4.15",
+    "buffer": "^5.5.0||^6.0.0",
     "flow-bin": "^0.216.0",
     "parcel": "^2.9.3",
     "postcss": "^8.4.29",
@@ -30,7 +32,7 @@
     "typescript": "^5.2.2"
   },
   "scripts": {
-    "start": "parcel src/index.html",
+    "start": "rm -r .parcel-cache && parcel src/index.html",
     "build": "parcel build",
     "prettier:check": "prettier --config .prettierrc.js --check \"**/*.{js,jsx,ts,tsx,json,css,scss}\"",
     "prettier": "prettier --config .prettierrc.js --write \"**/*.{js,jsx,ts,tsx,json,css,scss}\"",
