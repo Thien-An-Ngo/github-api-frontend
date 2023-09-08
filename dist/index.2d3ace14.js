@@ -27305,7 +27305,7 @@ parcelHelpers.export(exports, "getUserData", ()=>getUserData);
 var _octokit = require("octokit");
 const fetchData = async (method, path, data)=>{
     const octokit = new (0, _octokit.Octokit)({
-        auth: "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"
+        auth: "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"
     });
     return await octokit.request(`${method} ${path}`, data);
 };
