@@ -7,7 +7,7 @@ export interface IUserData {
 }
 
 const fetchData = async (method: string, path: string, data: any): Promise<any> => {
-    const octokit = new Octokit({auth: process.env.REACT_APP_GITHUB_TOKEN})
+    const octokit = new Octokit()
 
     return await octokit.request(`${method} ${path}`, data)
 }
@@ -31,8 +31,6 @@ const getUser = async (username: string): Promise<
     if (res === "Error 404") {
         return "Error 404"
     }
-
-    console.log(res)
     
     return {
         publicRepos: res.data.public_repos,
